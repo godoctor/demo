@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func bar() error { //<<<<<adderror,9,1,9,1,pass
+	if 3 < 5 {
+		fmt.Println("Yes")
+		return nil
+	} else {
+		fmt.Println("No")
+		return nil
+	}
+}
+
+func main() {
+	bar()
+	fmt.Println("Done")
+}

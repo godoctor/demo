@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+func foo() error { //<<<<<adderror,5,1,5,1,pass
+	fmt.Println("in foo")
+	return nil
+}
+
+func main() {
+	foo()
+	fmt.Println("Done")
+}
