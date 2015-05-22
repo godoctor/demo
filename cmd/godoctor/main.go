@@ -14,5 +14,5 @@ import (
 
 func main() {
 	engine.AddRefactoring("adderror", new(demo.AddError))
-	os.Exit(cli.Run(os.Stdin, os.Stdout, os.Stderr, os.Args))
+	os.Exit(cli.Run("Custom Go Doctor", os.Stdin, os.Stdout, os.Stderr, os.Args))
 }
